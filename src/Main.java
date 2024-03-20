@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        ThreadExample thread1 = new ThreadExample();
-        thread1.setName("FIrst Thread");
+        Thread thread1 = new Thread(new RunnableExample());
         thread1.start();
 
-        ThreadExample thread2 = new ThreadExample();
-        thread2.setName("FIrst Thread");
+        Thread thread2 = new Thread(new RunnableExample());
         thread2.start();
     }
 }
